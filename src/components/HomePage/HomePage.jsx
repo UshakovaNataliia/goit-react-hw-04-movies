@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import MoviesPage from '../MoviesPage/MoviesPage';
 import { popularMovies } from '../api.js';
 
-// const styles = {
-//   status: { width: '100px' },
-// };
-
 class HomePage extends Component { 
   state = {
     movies: [],

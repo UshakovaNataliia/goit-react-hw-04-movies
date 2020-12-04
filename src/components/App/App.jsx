@@ -1,18 +1,17 @@
 import React, { Component, Suspense, lazy } from 'react';
-// import Axios from 'axios';
 import {Route, Switch} from 'react-router-dom'
 import NotFound from '../../views/NotFound';
 import NavigationView from '../../views/NavigationView';
 import Loader from 'react-loader-spinner'
 
 const HomePage = lazy(() =>
-  import('../HomePage/HomePage' /* webpackChunkName: "home-view" */),
+  import('../HomePage/HomePage'),
 );
 const MoviesView = lazy(() =>
-  import('../../views/MoviesView' /* webpackChunkName: "movies-view" */),
+  import('../../views/MoviesView'),
 );
 const MovieDetailsPage = lazy(() =>
-  import('../../views/MovieDetailsPage' /* webpackChunkName: "detailsMovie-view" */),
+  import('../../views/MovieDetailsPage'),
 );
 
 class App extends Component { 

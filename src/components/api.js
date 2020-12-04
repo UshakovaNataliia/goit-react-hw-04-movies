@@ -21,7 +21,3 @@ export const movieCast = id =>
 export const movieReviews = id =>
     Axios.get(`${API}movie/${id}/reviews?api_key=${KEY}&language=en-US&page=1`)
         .then(res => res.data);
-
-
-
-
