@@ -3,9 +3,6 @@ import React, { Component, Suspense, lazy } from 'react';
 import {Route, Switch} from 'react-router-dom'
 import NotFound from '../../views/NotFound';
 import NavigationView from '../../views/NavigationView';
-// import MoviesView from '../../views/MoviesView';
-// import MovieDetailsPage from '../../views/MovieDetailsPage';
-// import HomePage from '../HomePage/HomePage';
 import Loader from 'react-loader-spinner'
 
 const HomePage = lazy(() =>
