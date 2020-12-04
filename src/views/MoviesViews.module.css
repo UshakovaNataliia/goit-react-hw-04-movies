@@ -1,0 +1,16 @@
+.input {
+  border: 2px solid rgb(178, 196, 24);
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+}
+.button {
+  border: 2px solid rgb(178, 196, 24);
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  margin: 20px auto;
+  width: 70px;
+}

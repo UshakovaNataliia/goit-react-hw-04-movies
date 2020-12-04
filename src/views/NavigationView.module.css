@@ -1,0 +1,22 @@
+.link {
+  color: rgb(133, 142, 150);
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 60px;
+  background-color: rgb(237, 243, 180);
+  border-radius: 10px;
+}
+
+.active {
+  color: rgb(53, 62, 189);
+}
+
+.ul {
+  padding: 20px;
+  display: flex;
+  font-size: 36px;
+  margin: 0 auto;
+  background-color: rgb(178, 196, 24);
+}
