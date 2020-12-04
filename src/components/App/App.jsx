@@ -5,13 +5,13 @@ import NavigationView from '../../views/NavigationView';
 import Loader from 'react-loader-spinner'
 
 const HomePage = lazy(() =>
-  import('../HomePage/HomePage'),
+  import('../HomePage/HomePage' /* webpackChunkName: 'home-page' */),
 );
 const MoviesView = lazy(() =>
-  import('../../views/MoviesView'),
+  import('../../views/MoviesView' /* webpackChunkName: 'movies-view' */),
 );
 const MovieDetailsPage = lazy(() =>
-  import('../../views/MovieDetailsPage'),
+  import('../../views/MovieDetailsPage' /* webpackChunkName: 'movie-details-page' */),
 );
 
 class App extends Component { 
