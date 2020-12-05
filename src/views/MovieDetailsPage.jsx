@@ -55,12 +55,12 @@ class MovieDetailsPage extends Component {
     const year = Number.parseInt(release_date);
     return (
       <div>
-            <br/>
+        <br/>
         <button onClick={this.handleGoBack} type="button" style={styles.button}>Go back</button>
         <br />
         <br/>
         <div style={styles.status}>
-           {this.state.error && <h1>Somethithg Wrong Try Again</h1>}
+           {this.state.error && <h1 color='red'>Somethithg Wrong. Try Again</h1>}
            <div style={styles.status}>
                 <img src={`https://image.tmdb.org/t/p/w300/${poster_path}` || nophoto} alt={`${original_title}`} width={300} />                
             </div>

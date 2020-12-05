@@ -9,12 +9,10 @@ const NavigationView = () => {
               <li className={styles.link}>
                 <NavLink exact activeClassName={styles.active} className={styles.link} to="/"> Home</NavLink>
               </li>
-              <li className={styles.link}>
+              <li className={styles.link} >
                 <NavLink className={styles.link} activeClassName={styles.active} to="/movies">Movies</NavLink>
               </li>
           </ul>
-      
-      
     </>
 )
 };
