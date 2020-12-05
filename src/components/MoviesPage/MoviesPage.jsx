@@ -7,10 +7,11 @@ import styles from './MoviesPage.module.css';
 const MoviesPage = (props) => { 
   return (
      <ul className={styles.ul}>
-      {props.movie.length > 0 &&
+      {props.movie.length !== 0 &&
         props.movie.map(el => (
           <li key={el.id} className={styles.li}>
-                <Link className={styles.a} to={{pathname: `/movies/${el.id}`, state: { from: props.location }}}>
+            <Link className={styles.a}
+              to={{ pathname: `/movies/${el.id}`, state: { from: props.location } }}>
                     <img className={styles.img}
                         src={
                             el.backdrop_path

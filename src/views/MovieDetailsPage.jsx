@@ -65,7 +65,7 @@ class MovieDetailsPage extends Component {
                 <img src={`https://image.tmdb.org/t/p/w300/${poster_path}` || nophoto} alt={`${original_title}`} width={300} />                
             </div>
             <div>
-                <h1>{original_title} ({year})</h1>
+                <h1>{original_title} {release_date&&(year)}</h1>
                 <p>{vote_average && `User score: ${vote_average*10}%`}</p>
                 <h2>Overview</h2>
                 <p>{overview}</p>
