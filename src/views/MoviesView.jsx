@@ -18,10 +18,10 @@ class MoviesView extends Component {
     }
   }
   async componentDidUpdate(prevProps, prevState) {
-    const parseQuery = queryString.parse(this.props.location.search);
-    const parseQueryPrev = queryString.parse(prevProps.location.search);
-    if (parseQueryPrev.query !== parseQuery.query) {
-      const movie = await searchMovie(parseQuery.query);
+    const {query: nextQuery} = queryString.parse(this.props.location.search);
+    const {query: prevQuery} = queryString.parse(prevProps.location.search);
+    if (prevQuery !== nextQuery) {
+      const movie = await searchMovie(nextQuery);
       this.setState({ movies: movie.results });
     }
   }

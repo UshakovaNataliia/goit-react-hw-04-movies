@@ -27,7 +27,9 @@ class MovieDetailsPage extends Component {
    const movie = await movieDetails(
      this.props.match.params.movieId,
    );
-   this.setState({ movie, queryHistiory: this.props.location.state.from });
+    this.setState({
+      movie, queryHistiory: this.props.location.state
+    });
   };
   handleGoBack = () => {
     const { state } = this.props.location;
