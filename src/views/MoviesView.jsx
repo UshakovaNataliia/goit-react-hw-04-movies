@@ -14,7 +14,6 @@ class MoviesView extends Component {
     const {query} = queryString.parse(this.props.location.search);
     if (query) {
       const movie = await searchMovie(query);
-
       this.setState({ movies: movie.results });
     }
   }
