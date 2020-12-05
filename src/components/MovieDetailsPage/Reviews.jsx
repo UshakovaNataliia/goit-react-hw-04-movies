@@ -27,7 +27,7 @@ export class Reviews extends Component {
             );
           })
         ) : (
-          <p>No Reviews</p>
+          <p>No reviews</p>
         )}
       </ul>
     );
