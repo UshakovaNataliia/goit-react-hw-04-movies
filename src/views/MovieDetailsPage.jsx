@@ -28,7 +28,7 @@ class MovieDetailsPage extends Component {
      this.props.match.params.movieId,
    );
     this.setState({
-      movie, queryHistiory: this.props.location.state
+      movie, queryHistiory: this.props.location.state.from
     });
   };
   handleGoBack = () => {
